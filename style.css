@@ -1,0 +1,141 @@
+/* ベースリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: linear-gradient(160deg, #a0e9c5 0%, #c5f0da 100%);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #007b5e;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #007b5e;
+}
+
+/* ヒーローセクション */
+.hero {
+  text-align: center;
+  padding: 100px 5% 60px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: #007b5e;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.hero img {
+  max-width: 280px;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* セクション */
+section {
+  background: #fff;
+  margin: 40px auto;
+  padding: 40px 5%;
+  border-radius: 10px;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  font-size: 1.6rem;
+  color: #007b5e;
+  margin-bottom: 20px;
+  border-left: 6px solid #007b5e;
+  padding-left: 10px;
+}
+
+section p {
+  margin-bottom: 1em;
+  line-height: 1.8;
+}
+
+/* 利用規約・プライバシーポリシー */
+.tos, .privacy {
+  margin-top: 30px;
+  line-height: 1.8;
+  white-space: pre-wrap; /* 改行を保持 */
+}
+
+.article-title {
+  font-weight: bold;
+  margin-top: 1em;
+  color: #007b5e;
+}
+
+/* お問い合わせボタン */
+.contact-button {
+  display: inline-block;
+  background-color: #007b5e;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.contact-button:hover {
+  background-color: #005a45;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
